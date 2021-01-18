@@ -5,22 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Character Counter</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/js/uikit-icons.min.js"></script>
   </head>
   <body>
-    <h1>This is a character counter</h1>
-    <p>
-      This is a simple character counter. You will enter any text in the field
-      below, and you will automatically see how many characters have been used.
-      It can be a word, a text, a paragraph or as much as necessary. Feel free.
-    </p>
+    <div class="uk-container uk-container-small">
+      <h1>This is a simple character counter</h1>
+      <p>
+        This is a simple character counter. You will enter any text in the field
+        below, and you will automatically see how many characters have been
+        used. It can be a word, a text, a paragraph or as much as necessary.
+        Feel free.
+      </p>
 
-    <textarea name="anyText" id="anyText" cols="30" rows="10"></textarea>
+      <textarea name="anyText" id="anyText" cols="30" rows="10"></textarea>
 
-    <p>
-      The number of characters used is <span id="numberOfCharacters"></span>
-    </p>
+      <p>
+        The number of characters used is
+        <span id="numberOfCharacters" class="uk-badge">0</span>
+      </p>
 
-    <p>Note: line breaks also count as one character</p>
+      <p class="uk-text-warning">
+        <strong>Note:</strong> line breaks also count as one character
+      </p>
+    </div>
 
     <script src="main.js"></script>
   </body>
